@@ -1,5 +1,6 @@
 ;;; generic-ref-set --- Generic accessor and modifier operators.
 
+
 ;; Copyright © 2015 Taylan Ulrich Bayırlı/Kammer <taylanbayirli@gmail.com>
 ;; Copyright © 2017 Diego <dieggsy@pm.me>
 
@@ -186,7 +187,7 @@
     (alist->hash-table
      (append
       (list (cons bytevector? bytevector-ref)
-            (cons hash-table? hash-table-ref)
+            (cons hash-table? hash-table-ref/default)
             (cons pair? pair-ref)
             (cons string? string-ref)
             (cons vector? vector-ref))
