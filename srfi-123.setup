@@ -1,6 +1,6 @@
 ;; -*- mode: scheme; -*-
-(compile -s -O3 -d1 srfi-123.scm -j srfi-123)
-(compile -s srfi-123.import.scm -O3 -d0)
+(compile -s -O3 srfi-123.scm -j srfi-123)
+(compile -s -O3 srfi-123.import.scm)
 
 (install-extension
  ;; Name of your extension:

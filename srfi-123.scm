@@ -27,8 +27,16 @@
                   ref*
                   ~
                   register-getter-with-setter!)
-  (import scheme chicken extras)
-  (use srfi-1 srfi-69 srfi-99 box srfi-4 r6rs.bytevectors)
+  (import scheme)
+  (cond-expand
+    (chicken-5
+     (import (chicken base)
+             box
+             (srfi 1) (srfi 69) (srfi 99) (srfi 4)
+             r7rs))
+    (else
+     (import chicken extras)
+     (use srfi-1 srfi-69 srfi-99 box srfi-4 r7rs)))
 
 ;;; Helpers
   (define-syntax push!
@@ -43,12 +51,6 @@
            (cdr pair))
           (else
            (list-ref pair key))))
-
-  (define (list-set! ls idx val)
-    (let ((ls (drop ls idx)))
-      (if (null? ls)
-          (error 'list-set! "index out-of-bounds" idx ls)
-          (set-car! ls val) ) ) )
 
   (define (pair-set! pair key value)
     (cond

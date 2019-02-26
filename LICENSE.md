@@ -1,5 +1,5 @@
 Copyright 2015 Taylan Ulrich Bayırlı/Kammer <taylanbayirli@gmail.com>
-Copyright 2017 Diego A. Mundo <dieggsy@protonmail.com>
+Copyright 2017 Diego A. Mundo <dieggsy@pm.me>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
