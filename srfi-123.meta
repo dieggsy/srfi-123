@@ -4,5 +4,5 @@
  (author "Taylan Ulrich Bayırlı/Kammer")
  (maintainer "Diego A. Mundo")
  (synopsis "SRFI-123 - Generic accessor and modifier operations")
- (needs srfi-99 box srfi-4 r6rs-bytevectors r7rs)
+ (needs srfi-99 box r7rs)
  (files "srfi-123.scm"))
