@@ -3,7 +3,7 @@
  (author "Taylan Ulrich Bayırlı/Kammer")
  (maintainer "Diego A. Mundo")
  (synopsis "SRFI-123 - Generic accessor and modifier operations")
- (dependencies srfi-99 box srfi-4 r7rs)
+ (dependencies srfi-99 box r7rs)
  (component-options
   (csc-options "-O3"))
  (components
